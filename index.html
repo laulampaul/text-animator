@@ -1,0 +1,112 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Text-Animator</title>
+<link href="./files/style.css" rel="stylesheet">
+<link href="./files/button.css" rel="stylesheet">
+<link href="./files/slider.css" rel="stylesheet">
+
+
+<script type="text/javascript" src="./files/jquery.mlens-1.0.min.js"></script> 
+<script type="text/javascript" src="./files/jquery.js"></script>
+<script src="./files/util.js" content="text/javascript"></script>
+<link rel="manifest" href="/site.webmanifest">
+
+
+</head>
+
+<body>
+<div class="content">
+
+  <h1><strong>Text-Animator: Dual Control based Text-to-Video Visual Text Generation</strong></h1>
+  <p id="authors"><a href="https://scholar.google.com/citations?user=-bDAN2YAAAAJ&hl=en">Lin Liu</a	><sup>1</sup>, <a href="https://liuquande.github.io/">Quande Liu</a><sup>2</sup><sup>&#x2709;</sup>, <a href="https://scholar.google.com/citations?user=QNnWmasAAAAJ&hl=zh-CN">Shengju Qian</a><sup>2</sup>,Yuan Zhou<sup>3</sup>, Wengang Zhou<sup>1</sup>, Houqiang Li<sup>1</sup> <br>Lingxi Xie<sup>4</sup>,
+    Qi Tian<sup>4</sup>
+    <br>
+  <span style="font-size: 18px"><sup>1</sup>EEIS Department, University of Science and Technology of China;&nbsp; <br><sup>2</sup> Tencent ; <br><sup>3</sup>Nanyang Technical University;<br><sup>4</sup>Huawei Tech
+  </span></p>
+  <div style="text-align: center;">
+    <span style="font-size: 14px"> &nbsp;&nbsp;&nbsp;&nbsp;  &#x2709; Corresponding Authors</span>
+  </div>
+          <p style="text-align: center;">
+            
+          </p>
+    </font>
+  </div>    
+<div class="content">
+
+  <h2>Results</h2>
+  <p> 
+  </p>
+  <div class="commContainer"> 
+    <div class="commResult">
+      <img class="commresultImage" src="./assets/fifth_part/ann/1.gif">
+      <img class="commresultImage"  src="./assets/fifth_part/ann/2.gif">
+      <img class="commresultImage" src="./assets/fifth_part/ann/3.gif">
+      <img class="commresultImage" src="./assets/fifth_part/ann/4.gif">
+      <img class="commresultImage" src="./assets/fifth_part/ann/5.gif">
+      <img class="commresultImage" src="./assets/fifth_part/ann/6.gif">
+    </div>
+  </div> 
+</div>
+
+<div class="content">
+  <h2 style="text-align:center;">Abstract</h2>
+  <p>Text-to-video (T2V) generation is a challenging yet pivotal task in various industries, such as gaming, e-commerce, and advertising. One significant unresolved aspect within T2V is the effective visualization of text within generated videos.
+    
+    
+    Despite the progress achieved in T2V generation, current methods still cannot effectively visualize texts in videos directly, as they mainly focus on  summarizing semantic scene information, understanding and depicting actions.
+    
+    While recent advances in text-to-image (T2I) visual text generation show promise, transitioning these techniques into the video domain faces problems, notably in preserving textual fidelity and motion coherence. 
+    
+    In this paper, we propose an innovative approach termed Text-Animator for text to video visual text generation. 
+    Text-Animator contains text embedding injection module to precisely depict the structures of visual text in generated videos. Besides, we develop a camera control module and a text refinement module to improve the stability of generated visual text by controlling the camera movement as well as the motion of visualized text.
+    
+ 
+    Quantitative and qualitative experimental results demonstrate the superiority of our approach on the accuracy of generated visual text over state-of-the-art video generation methods.
+  </p>
+</div>
+
+<div class="content">
+  <h2 style="text-align:center;">Method</h2>
+  <p> Framework of Text-Animator. Given a pre-trained T2V 3D-UNet, the camera controlnet takes camera embedding as input and
+    outputs camera representations; the text and position controlnet takes the combination feature zc as input and outputs position representations These features are then integrated into the 2D Conv layers and temporal attention layers of 3D-UNet at their respective scales.
+  <br>
+  <img class="summary-img" src="./assets/framework.png" style="width:80%;"> <br>
+
+
+  <br>
+</div>
+ 
+<div class="content">
+
+  <h2>Comparison Results</h2>
+  <p> 
+  </p>
+  <div class="commContainer"> 
+  
+      <div><img class="commresultImage" width="100" height="100" src="./assets/fifth_part/hinton/gen2.gif"> <span>Gen2</span> </div>
+      <div><img class="commresultImage" width="100" height="100" src="./assets/fifth_part/hinton/opensora.gif"> <span>Open-sora</span> </div>
+      <div><img class="commresultImage" width="100" height="100" src="./assets/fifth_part/hinton/pika.gif"> <span>Pika.art </span> </div>
+      <div><img class="commresultImage" width="100" height="100" src="./assets/fifth_part/hinton/ours.gif"> <span>Ours </span> </div>
+      
+   
+  </div> 
+</div>
+
+<div class="content" id="acknowledgements">
+  <p>
+    <!-- <strong>Acknowledgements</strong>: -->
+    <!-- If you want an image removed from this page or have other requests, please contact us at <a href="mailto:zhenli1031@gmail.com">zhenli1031@gmail.com</a>. -->
+    <!-- <br> -->
+    Our project page is borrowed from <a href="https://dreambooth.github.io/">DreamBooth</a>.
+    <!-- Recycling a familiar <a href="https://chail.github.io/latent-composition/">template</a> ;). --> 
+  </p>
+</div>
+<script content="text/javascript">initArtSelection(); </script>
+<script content="text/javascript">initRealSelection(); </script>
+<script content="text/javascript">initReconSelection(); </script>
+<script content="text/javascript">initMixSelection(); </script>
+<script content="text/javascript">initCommuSelection(); </script>
+
+</body>
+</html>

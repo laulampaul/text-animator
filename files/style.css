@@ -1,0 +1,655 @@
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+}
+.content {
+  width: 1000px;
+  padding: 25px 50px;
+  margin: 25px auto;
+  background-color: white;
+  box-shadow: 0px 0px 10px #999;
+  border-radius: 15px;
+  font-family: "Google Sans";
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: -10; /* 减少logo下方的间距 */
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 0 !important; /* 使用 !important 来强制应用这个规则 */
+}
+
+h1 {
+  margin-top: 0 !important; /* 使用 !important 来强制应用这个规则 */
+}
+
+.logo img {
+  width: 10%;
+  /* margin-bottom: -19; */
+  /* border-radius: 50%; */
+  /* box-shadow: 0 0 10px #999; */
+}
+/* .logo img:hover {
+  width: 210px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #999;
+} */
+
+.contentblock {
+  width: 950px;
+  margin: 0 auto;
+  padding: 0;
+  border-spacing: 25px 0;
+}
+.contentblock td {
+  background-color: #fff;
+  padding: 25px 50px;
+  vertical-align: top;
+  box-shadow: 0px 0px 10px #999;
+  border-radius: 15px;
+}
+a, a:visited {
+  color: #224b8d;
+  font-weight: 300;
+}
+#authors {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#conference {
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+#authors a {
+  margin: 0 10px;
+}
+h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+code {
+  display: block;
+  padding: 10px;
+  margin: 10px 10px;
+}
+p {
+  line-height: 25px;
+  text-align: justify;
+}
+p code {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+#teasers {
+  margin: 0 auto;
+}
+#teasers td {
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+}
+#teasers img {
+  width: 250px;
+}
+#results img {
+  width: 133px;
+}
+#seeintodark {
+  margin: 0 auto;
+}
+#sift {
+  margin: 0 auto;
+}
+#sift img {
+  width: 250px;
+}
+.downloadpaper {
+  padding-left: 20px;
+  float: right;
+  text-align: center;
+}
+.downloadpaper a {
+  font-weight: bold;
+  text-align: center;
+}
+.teaser-img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.teaser-gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.summary-img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.video-iframe {
+  width: 1000;
+  height: 800;
+  margin: auto;
+  display: block;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.image {
+  flex-basis: 40%
+}
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.boxshadow {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 2px 2px 5px #888888;
+}
+.spacertr {
+  height: 8px;
+}
+.spacertd {
+  width: 40px;
+}
+
+
+.realContainer {  display: grid;
+  margin-top: 5%;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows:  0.5fr 1.5fr;
+  gap: 2% 0%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "real1stCol real2ndCol real3rdCol real4thCol real5thCol real6thCol"
+    "realResult realResult realResult realResult realResult realResult";
+}
+
+.realImage {
+  opacity:0.2;
+  transition: 1s ease;
+  width: 80%;
+  aspect-ratio : 1 / 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+
+ .resultImage {
+  width: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+
+ .realImageSelected {
+  width: 80%;
+  aspect-ratio : 1 / 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: auto;
+  border: 4px;
+  border-color: rgb(255, 255, 255);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0px 4px 8px 0px  rgb(0,0,0,0.8);
+  border:solid 5px hsla(0, 95%, 35%, 1); }
+
+ .realRefImage {
+  opacity:0.2;
+  transition: 1s ease;
+	transition: .3s ease-in-out;
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: auto;
+ }
+ 
+ .realRefImageSelected {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  border:dotted 5px hsla(0, 95%, 35%, 1);
+ }
+
+.realImage:hover{
+  box-shadow: 0px 4px 8px 0px rgb(0,0,0,0.5);
+}
+.real1stCol { 
+  grid-area: real1stCol;
+  text-align: center;
+ }
+
+.real2ndCol { grid-area: real2ndCol;   text-align: center; }
+
+.real3rdCol { grid-area: real3rdCol;   text-align: center;}
+
+.real4thCol { grid-area: real4thCol;   text-align: center; }
+
+.real5thCol { grid-area: real5thCol;   text-align: center; }
+
+.real6thCol { grid-area: real6thCol;   text-align: center; }
+
+/* .realResult { grid-area: realResult;   text-align: right; display: grid; place-items: center; } */
+
+.realResult {
+  grid-area: realResult;
+  text-align: right;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  place-items: center;
+}
+
+.resultImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+.artContainer {  display: grid;
+  margin-top: 5%;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows:  0.5fr 1.5fr;
+  gap: 2% 0%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "art1stCol art2ndCol art3rdCol art4thCol art5thCol art6thCol"
+    "artResult artResult artResult artResult artResult artResult";
+}
+
+.artImage {
+  opacity:0.2;
+  transition: 1s ease;
+  width: 80%;
+  aspect-ratio : 1 / 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+
+ .resultImage {
+  width: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+
+ .artImageSelected {
+  width: 80%;
+  aspect-ratio : 1 / 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: auto;
+  border: 4px;
+  border-color: rgb(255, 255, 255);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0px 4px 8px 0px  rgb(0,0,0,0.8);
+  border:solid 5px hsla(0, 95%, 35%, 1); }
+
+ .artRefImage {
+  opacity:0.2;
+  transition: 1s ease;
+	transition: .3s ease-in-out;
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: auto;
+ }
+ 
+ .artRefImageSelected {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  border:dotted 5px hsla(0, 95%, 35%, 1);
+ }
+
+.artImage:hover{
+  box-shadow: 0px 4px 8px 0px rgb(0,0,0,0.5);
+}
+.art1stCol { 
+  grid-area: art1stCol;
+  text-align: center;
+ }
+
+.art2ndCol { grid-area: art2ndCol;   text-align: center; }
+
+.art3rdCol { grid-area: art3rdCol;   text-align: center;}
+
+.art4thCol { grid-area: art4thCol;   text-align: center; }
+
+.art5thCol { grid-area: art5thCol;   text-align: center; }
+
+.art6thCol { grid-area: art6thCol;   text-align: center; }
+
+.artResult { grid-area: artResult;   text-align: right; display: grid; place-items: center; }
+
+
+
+
+.ReconRowContainer {  display: grid;
+  margin-top: 5%;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-template-rows:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1.5fr;
+  gap: 2% 0%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "recon11 recon12 recon13"
+    "recon21 recon22 recon23"
+    "recon31 recon32 recon33"
+    "recon41 recon42 recon43"
+    "recon51 recon52 recon53"
+}
+
+
+.recon11 { grid-area: recon11;   text-align: center; }
+
+.recon12 { grid-area: recon12;   text-align: center;}
+
+.recon13 { grid-area: recon13;   text-align: center; }
+
+
+
+.recon21 { grid-area: recon21;   text-align: center; }
+
+.recon22 { grid-area: recon22;   text-align: center;}
+
+.recon23 { grid-area: recon23;   text-align: center; }
+
+.recon31 { grid-area: recon31;   text-align: center; }
+
+.recon32 { grid-area: recon32;   text-align: center;}
+
+.recon33 { grid-area: recon33;   text-align: center; }
+
+.recon41 { grid-area: recon41;   text-align: center; }
+
+.recon42 { grid-area: recon42;   text-align: center;}
+
+.recon43 { grid-area: recon43;   text-align: center; }
+
+.recon51 { grid-area: recon51;   text-align: center; }
+
+.recon52 { grid-area: recon52;   text-align: center;}
+
+.recon53 { grid-area: recon53;   text-align: center; }
+.ReconImageSelected {
+  width: 80%;
+  aspect-ratio : 1 / 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: auto;
+  border: 4px;
+  border-color: rgb(255, 255, 255);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0px 4px 8px 0px  rgb(0,0,0,0.8);
+  border:solid 5px hsla(0, 95%, 35%, 1); }
+
+
+.ReconImage {
+  opacity:0.2;
+  transition: 1s ease;
+  width: 80%;
+  aspect-ratio : 1 / 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+
+.ReconSelect {  display: grid;
+      margin-top: 5%;
+      grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+      grid-template-rows:  0.5fr 1.5fr;
+      gap: 2% 0%;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "ReconSelect1 ReconSelect2 ReconSelect3 ReconSelect4 ReconSelect5"
+        "ReconResult ReconResult ReconResult ReconResult ReconResult";
+}
+
+.ReconSelect1 { grid-area: ReconSelect1;   text-align: center; }
+.ReconSelect2 { grid-area: ReconSelect2;   text-align: center; }
+.ReconSelect3 { grid-area: ReconSelect3;   text-align: center; }
+.ReconSelect4 { grid-area: ReconSelect4;   text-align: center; }
+.ReconSelect5 { grid-area: ReconSelect5;   text-align: center; }
+.ReconResult {
+  grid-area: ReconResult;
+  text-align: right;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+  place-items: center;
+}
+
+
+
+
+.mixContainer {  display: grid;
+  margin-top: 5%;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows:  0.5fr 1.5fr;
+  gap: 2% 0%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "mix1 mix2 mix3 mix4 mix5 mix6"
+    "mixResult mixResult mixResult mixResult mixResult mixResult";
+}
+
+.mixImage {
+  opacity:0.2;
+  transition: 1s ease;
+  width: 80%;
+  aspect-ratio : 1 / 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+
+ .mixresultImage {
+  width: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+
+ .mixImageSelected {
+  width: 80%;
+  aspect-ratio : 1 / 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: auto;
+  border: 4px;
+  border-color: rgb(255, 255, 255);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0px 4px 8px 0px  rgb(0,0,0,0.8);
+  border:solid 5px hsla(0, 95%, 35%, 1); }
+  .mix6 { 
+    grid-area: mix6;
+    text-align: center;
+   }
+  
+  .mix1 { grid-area: mix1;   text-align: center; }
+  
+  .mix2 { grid-area: mix2;   text-align: center;}
+  
+  .mix3 { grid-area: mix3;   text-align: center; }
+  
+  .mix4 { grid-area: mix4;   text-align: center; }
+  
+  .mix5 { grid-area: mix5;   text-align: center; }
+
+  .mixResult {
+    grid-area: mixResult;
+    text-align: right;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    place-items: center;
+  }
+
+
+
+
+  .commContainer {  display: grid;
+    margin-top: 5%;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows:  0.5fr 1.5fr;
+    gap: 2% 0%;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "comm1 comm3 comm4 comm5 comm6"
+      "commResult commResult commResult commResult commResult";
+  }
+  
+  .commImage {
+    opacity:0.2;
+    transition: 1s ease;
+    width: 80%;
+    aspect-ratio : 1 / 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   }
+  
+   .commresultImage {
+    width: 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   }
+  
+   .commImageSelected {
+    width: 80%;
+    aspect-ratio : 1 / 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin: auto;
+    border: 4px;
+    border-color: rgb(255, 255, 255);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 4px 8px 0px  rgb(0,0,0,0.8);
+    border:solid 5px hsla(0, 95%, 35%, 1); }
+    .comm6 { 
+      grid-area: comm6;
+      text-align: center;
+     }
+    
+    .comm1 { grid-area: comm1;   text-align: center; }
+    
+    /* .comm2 { grid-area: comm2;   text-align: center;} */
+    
+    .comm3 { grid-area: comm3;   text-align: center; }
+    
+    .comm4 { grid-area: comm4;   text-align: center; }
+    
+    .comm5 { grid-area: comm5;   text-align: center; }
+  
+    .commResult {
+      grid-area: commResult;
+      text-align: right;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+      place-items: center;
+    }
+    
+
+
+
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+    
+    .col {
+      float: left;
+      width: 33.33%;
+      box-sizing: border-box;
+      padding: 2px;
+    }
+    
+    .col-gallery {
+      float: left;
+      /* width: 25%; */
+      width: 24.5%;
+      box-sizing: border-box;
+      padding: 2px;
+    }
+    
+    .imageContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .caption {
+      text-align: center;
+      margin-top: 5px;
+    }
+    
