@@ -3,7 +3,7 @@
 This repository is the official implementation of [Text-Animator](https://laulampaul.github.io/text-animator.html).
 
 
-**[ID-Animator: Zero-Shot Identity-Preserving Human Video Generation]((https://laulampaul.github.io/text-animator.html))** 
+**[Text-Animator: Controllable Visual Text Video Generation]((https://laulampaul.github.io/text-animator.html))** 
 </br>
 Lin Liu, Quande Liu, Shengju Qian,Yuan Zhou, Wengang Zhou, Houqiang Li
 Lingxi Xie, Qi Tian
@@ -14,6 +14,6 @@ Lingxi Xie, Qi Tian
 **[![huggingface](https://img.shields.io/badge/%F0%9F%A4%97huggingface-yellow)](https://huggingface.co/ID-Animator/ID-Animator)**
 
 ## Next
-- [x] Release Code
+- [ ] Release Code
 
 **Code will be released soon!**
